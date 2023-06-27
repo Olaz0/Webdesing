@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekt 1 - Szczegóły</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Projekt 1 - Restauracja C#</h1>
+
+  <div class="projekt1.html">
+    <h2 class="scroll-animation">Opis projektu</h2>
+    <p class="scroll-animation">Nasz projekt jest programem/kodem emulującym pracę kasy w restauracji. Celem tego rozwiązania jest umożliwienie restauracji symulowania operacji związanych z obsługą zamówień, generowaniem paragonów oraz przechowywaniem danych dotyczących zamówień w bazie danych.</p>
+
+    <h2 class="scroll-animation">Zrzuty ekranu</h2>
+    <img class="scroll-animation" src="screenshot1.jpg" alt="Screenshot 1">
+    <img class="scroll-animation" src="screenshot2.jpg" alt="Screenshot 2">
+
+    <h2 class="scroll-animation">Funkcje</h2>
+    <ul class="scroll-animation">
+      <li>Menu restauracji: Emulator kasy zawiera zdefiniowane różne rodzaje jedzenia i napojów, które można zamówić. Menu to zazwyczaj obejmuje szeroką gamę dań, takich jak przystawki, dania główne, desery, napoje itp. Każde danie jest reprezentowane przez nazwę, opis, cenę i inne właściwości, które mogą być istotne dla klienta.</li>
+      <li>Składanie zamówienia: Program umożliwia użytkownikowi składanie zamówienia, wybierając odpowiednie elementy z menu. Może to być wykonane poprzez interfejs użytkownika, gdzie klient ma możliwość przeglądania dostępnych dań i dodawania ich do zamówienia. System pozwala na dodawanie wielu elementów do jednego zamówienia.</li>
+      <li>Generowanie paragonu: Po złożeniu zamówienia, program generuje paragon, na którym znajduje się opis zamówienia, lista zamówionych dań i napojów, łączna kwota do zapłaty oraz data zamówienia. Paragon może być wyświetlany na ekranie lub wydrukowany w formie papierowej.</li>
+      <li>Baza danych paragonów: Wszystkie złożone zamówienia są przechowywane w bazie danych. Każdy paragon jest reprezentowany jako wpis w bazie danych, zawierający informacje takie jak numer paragonu, lista zamówionych dań, data zamówienia itp. Baza danych umożliwia przechowywanie i zarządzanie danymi dotyczącymi zamówień, co pozwala restauracji na późniejsze przeglądanie historii zamówień i analizę danych.</li>
+      <li>Zarządzanie menu: W celu dostosowania menu do zmieniających się preferencji klientów, program umożliwia zarządzanie menu restauracji. Właściciel restauracji może dodawać, usuwać lub edytować istniejące elementy menu, takie jak dania, napoje, ceny itp.</li>
+    </ul>
+
+    <h2 class="scroll-animation">Technologie</h2>
+    <p class="scroll-animation">W wym projekcie wykorzystano następujące technologie:</p>
+    <ul class="scroll-animation">
+      <li>Technologia 1</li>
+      <li>Technologia 2</li>
+      <li>Technologia 3</li>
+    </ul>
+
+    <h2 class="scroll-animation">Linki</h2>
+    <p class="scroll-animation">Tutaj możesz umieścić linki do wersji demonstracyjnej, repozytorium kodu lub innych zasobów związanych z projektem.</p>
+    <a class="scroll-animation" href="https://github.com/Olaz0/Restaurant" target="_blank">GitHub</a>
+    <a class="scroll-animation" href="https://www.github.com" target="_blank">Link do repozytorium kodu</a>
+  </div>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.scroll-animation', {
+      delay: 200,
+      distance: '20px',
+      duration: 1000,
+      easing: 'ease-in-out',
+      origin: 'bottom',
+      reset: true
+    });
+  </script>
+
+  <h2></h2>
+  <ul>
+    <a href="index.html" class="btn btn-primary">Powrót do strony głównej</a>
+  </ul>
+</body>
+</html>
