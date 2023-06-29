@@ -92,34 +92,84 @@ ScrollReveal().reveal('.scroll-reveal-section', {
 // Wywołanie funkcji sprawdzającej kolizję
 checkCollision();
 
-// Kalkulator 
 $(document).ready(function() {
-  // Utwórz obiekt z danymi stawek godzinowych dla usług
   var stawki = {
-    html: 50,
-    python: 80,
-    c_cplusplus: 70,
-    c_sharp: 90,
-    web: 60
+      backend: {
+          java: 50,
+          python: 45,
+          php: 40,
+          csharp: 55
+      },
+      frontend: {
+          html: 30,
+          css: 25,
+          javascript: 35
+      },
+      inne: {
+          windows: 20,
+          linux: 18,
+          webdesign: 40,
+          adobe: 50,
+          figma: 35,
+          dmax: 60,
+          unity: 55
+      }
   };
 
   // Obsługa kliknięcia na opcję usługi
   $('.service-option').click(function() {
-    $('.service-option').removeClass('selected');
-    $(this).addClass('selected');
+      $('.service-option').removeClass('selected');
+      $(this).addClass('selected');
   });
 
   // Obsługa przycisku "Oblicz"
   $('#oblicz-btn').click(function() {
-    // Pobranie wartości pól formularza
-    var usluga = $('.service-option.selected').data('service');
-    var stawka = stawki[usluga];
-    var liczbaGodzin = parseFloat($('#liczba-godzin').val());
+      // Pobranie wartości pól formularza
+      var usluga = $('.service-option.selected').data('service');
+      var stawka = stawki[usluga];
+      var liczbaGodzin = parseFloat($('#liczba-godzin').val());
 
-    // Obliczenia
-    var wynik = stawka * liczbaGodzin;
+      // Obliczenia
+      var wynik = stawka * liczbaGodzin;
 
-    // Wyświetlenie wyniku
-    $('#wynik').val(wynik.toFixed(2));
+      // Wyświetlenie wyniku
+      $('#wynik').val(wynik.toFixed(2));
   });
 });
+const translations = {
+  polski: {
+    aboutMe: "O mnie",
+    projects: "Projekty",
+    contact: "Kontakt",
+    calculator: "Kalkulator",
+    language: "Język",
+    english: "English",
+    polish: "Polski",
+    welcome: "Witam Cię na mojej stronie portfolio!",
+    intro: "Na stronie znajdziesz przegląd moich projektów...",
+    contactForm: "Formularz kontaktowy",
+    nameLabel: "Imię:",
+    emailLabel: "Email:",
+    messageLabel: "Wiadomość:",
+    sendButton: "Wyślij",
+    footerText: "&copy; 2023 Oleksandr Kostariev. Wszelkie prawa zastrzeżone."
+  },
+  english: {
+    aboutMe: "About Me",
+    projects: "Projects",
+    contact: "Contact",
+    calculator: "Calculator",
+    language: "Language",
+    english: "English",
+    polish: "Polski",
+    welcome: "Welcome to my portfolio website!",
+    intro: "On this website, you will find an overview of my projects...",
+    contactForm: "Contact Form",
+    nameLabel: "Name:",
+    emailLabel: "Email:",
+    messageLabel: "Message:",
+    sendButton: "Send",
+    footerText: "&copy; 2023 Oleksandr Kostariev. All rights reserved."
+  }
+};
+

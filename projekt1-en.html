@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Projekty</title>
+    <title>Projects</title>
    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -59,77 +59,80 @@
     <header>
         <!-- Navigacja -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Oleksandr Kostariev</a>
+            <a class="navbar-brand" href="index-en.html">Oleksandr Kostariev</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Strona Główna</a>
+                        <a class="nav-link" href="index-en.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="projekty-en.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="projekty.html">Projekty</a>
+                        <a class="nav-link" href="kontakt-en.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="kontakt.html">Kontakt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="kalkulator.html">Kalkulator</a>
+                        <a class="nav-link" href="kalkulator-en.html">Carculator</a>
                     </li>
                 </ul>
                 <div class="social-icons navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="projekt1-en.html" id="language-toggle">EN</a>
+                        <a class="nav-link" href="projekt1.html" id="language-toggle">PL</a>
                       </li>
                     <a class="nav-link" href="https://www.linkedin.com/" target="_blank">
-                        <img src="https://static.vecteezy.com/system/resources/previews/018/930/585/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="LinkedIn">
+                        <img src="https://static.vecteezy.com/system/resources/previews/018/930/585/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png"
+                             alt="LinkedIn">
                     </a>
                     <a class="nav-link" href="https://github.com/Olaz0" target="_blank">
-                        <img src="https://static.vecteezy.com/system/resources/previews/024/555/266/non_2x/github-logo-black-transparent-free-png.png" alt="GitHub">
+                        <img src="https://static.vecteezy.com/system/resources/previews/024/555/266/non_2x/github-logo-black-transparent-free-png.png"
+                             alt="GitHub">
                     </a>
                     <a class="nav-link" href="https://t.me/AlehandroBulochkin" target="_blank">
-                        <img src="https://static.vecteezy.com/system/resources/previews/017/221/837/non_2x/telegram-black-free-png.png" alt="Telegram">
+                        <img src="https://static.vecteezy.com/system/resources/previews/017/221/837/non_2x/telegram-black-free-png.png"
+                             alt="Telegram">
                     </a>
                 </div>
             </div>
         </nav>
     </header>
 
-  <h1>Projekt - Restauracja C/C++ </h1>
+  <h1>Project - Restauracja C/C++ </h1>
 
   <div class="projekt1.html" style="margin: 15px">
-    <h2 class="scroll-animation">Opis projektu</h2>
-    <p class="scroll-animation">Nasz projekt jest programem/kodem emulującym pracę kasy w restauracji. Celem tego rozwiązania jest umożliwienie restauracji symulowania operacji związanych z obsługą zamówień, generowaniem paragonów oraz przechowywaniem danych dotyczących zamówień w bazie danych.</p>
+    <h2 class="scroll-animation">Project description</h2>
+    <p class="scroll-animation">Our project is a program/code that emulates the cash register in a restaurant. The purpose of this solution is to enable the restaurant to simulate operations related to handling orders, generating receipts and storing order data in a database.</p>
 
-    <h2 class="scroll-animation">Zrzuty ekranu</h2>
+    <h2 class="scroll-animation">Screen shots</h2>
     <img class="scroll-animation" src="PNG/restaurant.png" alt="Screenshot 1">
     <img class="scroll-animation" src="screenshot2.jpg" alt="Screenshot 2">
 
-    <h2 class="scroll-animation">Funkcje</h2>
+    <h2 class="scroll-animation">Functions</h2>
     <ul class="scroll-animation">
-      <li>Menu restauracji: Emulator kasy zawiera zdefiniowane różne rodzaje jedzenia i napojów, które można zamówić. Menu to zazwyczaj obejmuje szeroką gamę dań, takich jak przystawki, dania główne, desery, napoje itp. Każde danie jest reprezentowane przez nazwę, opis, cenę i inne właściwości, które mogą być istotne dla klienta.</li>
-      <li>Składanie zamówienia: Program umożliwia użytkownikowi składanie zamówienia, wybierając odpowiednie elementy z menu. Może to być wykonane poprzez interfejs użytkownika, gdzie klient ma możliwość przeglądania dostępnych dań i dodawania ich do zamówienia. System pozwala na dodawanie wielu elementów do jednego zamówienia.</li>
-      <li>Generowanie paragonu: Po złożeniu zamówienia, program generuje paragon, na którym znajduje się opis zamówienia, lista zamówionych dań i napojów, łączna kwota do zapłaty oraz data zamówienia. Paragon może być wyświetlany na ekranie lub wydrukowany w formie papierowej.</li>
-      <li>Baza danych paragonów: Wszystkie złożone zamówienia są przechowywane w bazie danych. Każdy paragon jest reprezentowany jako wpis w bazie danych, zawierający informacje takie jak numer paragonu, lista zamówionych dań, data zamówienia itp. Baza danych umożliwia przechowywanie i zarządzanie danymi dotyczącymi zamówień, co pozwala restauracji na późniejsze przeglądanie historii zamówień i analizę danych.</li>
-      <li>Zarządzanie menu: W celu dostosowania menu do zmieniających się preferencji klientów, program umożliwia zarządzanie menu restauracji. Właściciel restauracji może dodawać, usuwać lub edytować istniejące elementy menu, takie jak dania, napoje, ceny itp.</li>
+        <li>Restaurant menu: The checkout emulator has defined different types of food and drinks that can be ordered. This menu usually includes a wide variety of dishes such as starters, main dishes, desserts, drinks, etc. Each dish is represented by a name, description, price and other characteristics that may be relevant to the customer.</li>
+        <li>Ordering: The program allows the user to place an order by selecting the appropriate items from the menu. This can be done through the user interface, where the customer can browse the available dishes and add them to the order. The system allows you to add many items to one order.</li>
+        <li>Receipt generation: After placing an order, the program generates a receipt, which contains a description of the order, a list of ordered dishes and drinks, the total amount to be paid and the date of the order. The receipt can be displayed on the screen or printed in paper form.</li>
+        <li>Receipt database: All orders placed are stored in the database. Each receipt is represented as an entry in the database, containing information such as the receipt number, list of dishes ordered, date of order, etc. The database allows you to store and manage order data, which allows the restaurant to view order history and analyze the data later.</li >
+        <li>Management of the menu: In order to adapt the menu to the changing preferences of customers, the program allows you to manage the restaurant's menu. The restaurant owner can add, remove or edit existing menu items such as dishes, drinks, prices, etc.</li>
     </ul>
 
-    <h2 class="scroll-animation">Technologie</h2>
-    <p class="scroll-animation">W wym projekcie wykorzystano następujące technologie:</p>
+    <h2 class="scroll-animation">Technologies</h2>
+    <p class="scroll-animation">The following technologies were used in this project:</p>
     <ul class="scroll-animation">
-      <li>Technologia 1</li>
-      <li>Technologia 2</li>
-      <li>Technologia 3</li>
+      <li>Technology 1</li>
+      <li>Technology 2</li>
+      <li>Technology 3</li>
     </ul>
 
-    <h2 class="scroll-animation">Linki</h2>
+    <h2 class="scroll-animation">Links</h2>
     <a class="scroll-animation" href="https://github.com/Olaz0/PizzeriaCplus" target="_blank">GitHub</a>
     <h2><h2>
   </div>
 <footer>
       <div class="stopka">
-          &copy; 2023 Oleksandr Kostariev. Wszelkie prawa zastrzeżone.
+          &copy; 2023 Oleksandr Kostariev. All rights reserved.
       </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

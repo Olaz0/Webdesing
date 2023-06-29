@@ -6,60 +6,48 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <style>
-        
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
-            margin: 0 20px; /* Odstęp od ściany */
-        }
-
-        .project {
-            background-color: #ffffff;
+        .about-me {
             padding: 20px;
             text-align: center;
-            border-radius: 5px;
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.3s, transform 0.3s;
         }
         
-        .project img {
+        .about-me img {
             width: 200px;
             height: 200px;
             object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-        .project h3 {
-            margin: 0;
-        }
-
-        .project .btn {
-            display: inline-block;
-            background-color: #333333;
-            color: #ffffff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .project .btn:hover{
-             background-color: #272727;
-             color: #ffffff;
+            border-radius: 50%;
+            margin-bottom: 20px;
         }
         
+        .about-me h2 {
+            margin-bottom: 10px;
+        }
+        
+        .about-me p {
+            margin: 10px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        
+        .about-me p.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
+
 <body>
     <header>
         <!-- Navigacja -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Moje Portfolio IT</a>
+            <a class="navbar-brand" href="index.html">Oleksandr Kostariev</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -68,8 +56,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Strona Główna</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="o-mnie.html">O mnie</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="o-mnie.html">O mnie</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="projekty.html">Projekty</a>
@@ -78,8 +66,8 @@
                         <a class="nav-link" href="kontakt.html">Kontakt</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="kalkulator.html">Kalkulator</a>
-                    </li>
+                      <a class="nav-link" href="kalkulator.html">Kalkulator</a>
+                  </li>
                 </ul>
                 <div class="social-icons navbar-nav ml-auto">
                     <a class="nav-link" href="https://www.linkedin.com/" target="_blank">
@@ -95,71 +83,94 @@
             </div>
         </nav>
     </header>
+    <head>
+        <title>O mnie</title>
+       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+        <style>
+            .about-me {
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .about-me img {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+            
+            .about-me h2 {
+                margin-bottom: 10px;
+            }
+            
+            .about-me p {
+                margin: 10px 0;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.3s, transform 0.3s;
+            }
+            
+            .about-me p.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+    </head>
 
     <main>
-        <h1 style="text-align: center;">Moje Projekty</h1>
-        <div class="project-grid">
-            <div class="project">
-                <img src="projekt1.jpg" alt="Projekt 1">
-                <h3>Nazwa Projektu 1</h3>
-                <a href="projekt1.html" class="btn">Więcej</a>
+        <section class="about-me">
+            <img src="JPG/oguzok.png" alt="Oleksandr Kostariev">
+            <div>
+                <h2>Witam!</h2>
+                <p id="p1">Mam na imię Oleksandr Kostariev. Mam 21 lat i studiuję Informatykę w Collegium Da Vinci w Poznaniu. Bardzo lubię bawić się w gierki, dlatego zdecydowałem się nauczyć programowania modeli graficznych i konsolowych.
+                </p><p id="p2">Wcześniej ukończyłem technikum samochodowe, ale zrozumiałem, że to nie jest moja pasja. Napisałem wiele projektów jako część kursów, więc mogę się nimi pochwalić.</p>
+                <p id="p3">Piszę kody w językach C/C++, C#, Python oraz Java, ale moją większą sympatią są technologie front-endowe, takie jak HTML, CSS i JavaScript. Lubię także eksperymentować z ustawieniami systemów Windows i Linux, tworzyć strony internetowe, montować grafikę i projektować w programie 3ds Max.</p>
+                <p id="p4">Mam również doświadczenie w pracy z Unity. Obecnie studiuję i pracuję nad własnymi projektami, aby rozwijać swoje umiejętności. Moje cele zawodowe to stanie się programistą gier i rozwój w dziedzinie sztucznej inteligencji.</p>
             </div>
-            <div class="project">
-                <img src="projekt2.jpg" alt="Projekt 2">
-                <h3>Nazwa Projektu 2</h3>
-                <a href="projekt2.html" class="btn">Więcej</a>
-            </div>
-            <div class="project">
-                <img src="projekt3.jpg" alt="Projekt 3">
-                <h3>Nazwa Projektu 3</h3>
-                <a href="projekt3.html" class="btn">Więcej</a>
-            </div>
-            <div class="project">
-                <img src="projekt4.jpg" alt="Projekt 4">
-                <h3>Nazwa Projektu 4</h3>
-                <a href="projekt4.html" class="btn">Więcej</a>
-            </div>
-            <div class="project">
-                <img src="projekt5.jpg" alt="Projekt 5">
-                <h3>Nazwa Projektu 5</h3>
-                <a href="projekt5.html" class="btn">Więcej</a>
-            </div>
-            <div class="project">
-                <img src="projekt6.jpg" alt="Projekt 6">
-                <h3>Nazwa Projektu 6</h3>
-                <a href="projekt6.html" class="btn">Więcej</a>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer>
-      <div class="stopka">
-          &copy; 2023 Moje Portfolio IT. Wszelkie prawa zastrzeżone.
-      </div>
-  </footer>
+        <div class="stopka">
+            &copy; 2023 Oleksandr Kostariev. Wszelkie prawa zastrzeżone.
+        </div>
+    </footer>
 
- 
+    <script>
+        // Animacja pojawiania się sekcji "O mnie"
+        document.addEventListener("DOMContentLoaded", function(event) {
+            const aboutMeSection = document.querySelector(".about-me");
+            const paragraphs = aboutMeSection.querySelectorAll("p");
 
-<script>
-    const projects = document.querySelectorAll('.project');
+            // Funkcja obsługująca pojawianie się bloków tekstu
+            const showParagraphs = () => {
+                let index = 0;
+                const interval = setInterval(() => {
+                    paragraphs[index].classList.add('show');
+                    index++;
 
-    // Funkcja obsługująca pojawianie się projektów
-    const showProjects = () => {
-        projects.forEach((project, index) => {
-            setTimeout(() => {
-                project.style.opacity = '1';
-                project.style.transform = 'translateY(0)';
-            }, index * 200);
+                    if (index >= paragraphs.length) {
+                        clearInterval(interval);
+                    }
+                }, 500); // Opóźnienie między pojawianiem się kolejnych bloków tekstu (500ms)
+            };
+
+            // Pokaż sekcję "O mnie"
+            aboutMeSection.style.opacity = '1';
+            aboutMeSection.style.transform = 'translateY(0)';
+
+            // Pokaż bloki tekstu sekwencyjnie
+            showParagraphs();
         });
-    };
-
-    // Wywołanie funkcji po załadowaniu strony
-    window.addEventListener('load', showProjects);
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </script>
+    
+    
 </body>
 </html>

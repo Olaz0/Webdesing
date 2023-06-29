@@ -1,51 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projekt 1 - Szczegóły</title>
-  <link rel="stylesheet" href="styles.css">
+    <title>Projekty</title>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            margin: 0 20px; /* Odstęp od ściany */
+        }
+
+        .project {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        
+        .project img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .project h3 {
+            margin: 0;
+        }
+
+        .project .btn {
+            display: inline-block;
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .project .btn:hover{
+             background-color: #272727;
+             color: #ffffff;
+        }
+        
+    </style>
 </head>
 <body>
-  <h1>Projekt 1 - Szczegóły</h1>
+    <header>
+        <!-- Navigacja -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Oleksandr Kostariev</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Strona Główna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projekty.html">Projekty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kalkulator.html">Kalkulator</a>
+                    </li>
+                </ul>
+                <div class="social-icons navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="projekt3-en.html" id="language-toggle">EN</a>
+                      </li>
+                    <a class="nav-link" href="https://www.linkedin.com/" target="_blank">
+                        <img src="https://static.vecteezy.com/system/resources/previews/018/930/585/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="LinkedIn">
+                    </a>
+                    <a class="nav-link" href="https://github.com/Olaz0" target="_blank">
+                        <img src="https://static.vecteezy.com/system/resources/previews/024/555/266/non_2x/github-logo-black-transparent-free-png.png" alt="GitHub">
+                    </a>
+                    <a class="nav-link" href="https://t.me/AlehandroBulochkin" target="_blank">
+                        <img src="https://static.vecteezy.com/system/resources/previews/017/221/837/non_2x/telegram-black-free-png.png" alt="Telegram">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <div class="projekt3.html">
-    <h2>Opis projektu</h2>
-    <p>Tutaj umieść opis projektu 1.</p>
+  <h1>Projekt - PinPong</h1>
 
-    <h2>Zrzuty ekranu</h2>
-    <img src="screenshot1.jpg" alt="Screenshot 1">
-    <img src="screenshot2.jpg" alt="Screenshot 2">
+  <div class="projekt1.html"style="margin: 15px">
+    <h2 class="scroll-animation">Opis projektu</h2>
+    <p class="scroll-animation">Napisałem grę PinPong samodzielnie, korzystając z narzędzia Processing. Jest to moja interpretacja klasycznej retro gry Pong, która została zoptymalizowana dla dwóch graczy. W grze gracze kontrolują paletki, które poruszają się w pionie, starając się odbijać piłeczkę i zdobywać punkty. Projekt został zrealizowany przy użyciu języka programowania Java.</p>
 
-    <h2>Funkcje</h2>
-    <ul>
-      <li>Funkcja 1</li>
-      <li>Funkcja 2</li>
-      <li>Funkcja 3</li>
+    <h2 class="scroll-animation">Zrzuty ekranu</h2>
+    <img class="scroll-animation" src="PNG/pong.jpg" alt="Screenshot 1">
+    <img class="scroll-animation" src="screenshot2.jpg" alt="Screenshot 2">
+
+    <h2 class="scroll-animation">Funkcje</h2>
+    <ul class="scroll-animation">
+      <li>Tryb gry dla dwóch graczy: Gra PinPong oferuje możliwość rywalizacji między dwoma graczami. Każdy gracz kontroluje swoją paletkę, starając się utrzymać piłeczkę w grze i zdobywać punkty poprzez odbijanie jej od paletki przeciwnika.</li>
+      <li>Mechanika odbijania piłeczki: Piłeczka porusza się po planszy i odbija się od paletki graczy oraz od ścianek bocznych. Gracze muszą odpowiednio poruszać paletkami, aby skierować piłeczkę w kierunku przeciwnika i uniknąć utraty punktu.</li>
+      <li>Licznik punktów: Gra śledzi punktację obu graczy i wyświetla ją na ekranie. Za każde skuteczne odbicie piłeczki przez paletkę przeciwnika gracz otrzymuje punkt. Gracz, który zdobędzie określoną liczbę punktów, wygrywa rozgrywkę.</li>
+      <li>Prosta oprawa graficzna: Gra PinPong posiada retro-stylową oprawę graficzną, nawiązującą do klasycznych gier z lat 80. Prosta i czytelna wizualizacja umożliwia skupienie się na rozgrywce.</li>
+      </ul>
+
+    <h2 class="scroll-animation">Technologie</h2>
+    <p class="scroll-animation">W wym projekcie wykorzystano następujące technologie:</p>
+    <ul class="scroll-animation">
+      <li>Processing: Narzędzie do tworzenia interaktywnych aplikacji i gier. Wykorzystałem Processing do napisania gry PinPong i implementacji mechaniki rozgrywki.</li>
+      
     </ul>
 
-    <h2>Technologie</h2>
-    <p>W projekcie 1 wykorzystano następujące technologie:</p>
-    <ul>
-      <li>Technologia 1</li>
-      <li>Technologia 2</li>
-      <li>Technologia 3</li>
-    </ul>
-
-    <h2>Linki</h2>
-    <p>Tutaj możesz umieścić linki do wersji demonstracyjnej, repozytorium kodu lub innych zasobów związanych z projektem.</p>
-    <a href="https://www.example.com" target="_blank">Link do wersji demonstracyjnej</a>
-    <a href="https://www.github.com" target="_blank">Link do repozytorium kodu</a>
+    <h2 class="scroll-animation">Linki</h2>
+    <a class="scroll-animation" href="https://github.com/Olaz0/PongProcessing" target="_blank">GitHub</a>
+    <h2><h2>
   </div>
+<footer>
+      <div class="stopka">
+          &copy; 2023 Oleksandr Kostariev. Wszelkie prawa zastrzeżone.
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/js/bootstrap.min.js"></script>
+  <script>
+    ScrollReveal().reveal('.scroll-animation', {
+      delay: 200,
+      distance: '20px',
+      duration: 1000,
+      easing: 'ease-in-out',
+      origin: 'bottom',
+      reset: true
+    });
+  </script>
+
   
-  <h2></h2>
-  <ul>
-    <a href="index.html" class="btn btn-primary">Powrót do strony głównej</a>
-  </ul>
 </body>
 </html>
-
